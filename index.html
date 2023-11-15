@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style/style.css">
+  <script src="apps.js" defer></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+
+    <main>
+        <div class="main-container">
+            <h1 class="title">Spli <br> tter</h1>
+
+            <div class="calculator-container">
+                <div class="form-container">
+                    <div class="bill-box">
+                        <div class="label-box">
+                            <label for="bill">Bill</label>
+                            <p class="error-top error-bill">Should have a value</p>
+                        </div>
+                        <img src="/images/icon-dollar.svg" alt="icon-dollar">
+                        <input type="number" id="bill" placeholder="0">
+                    </div>
+
+                    <div class="tip-box">
+                        <p>Select Tip &</p>
+                        <div class="btn-container">
+                            <button class="btn-val btnPercent" id="tipBtn" value="5">5%</button>
+                            <button class="btn-val btnPercent" id="tipBtn" value="10">10%</button>
+                            <button class="btn-val btnPercent" id="tipBtn" value="15">15%</button>
+                            <button class="btn-val btnPercent" id="tipBtn" value="25">25%</button>
+                            <button class="btn-val btnPercent" id="tipBtn" value="50">50%</button>
+                            <input class="btn-val btn-input" type="number" id="inputCustom" placeholder="Custom" min="1" max="100">
+                        </div>
+                    </div>
+
+                    <div class="People-box">
+                        <div class="label-box">
+                            <label for="peopleCount">Number of people</label>
+                            <p class="error-top error-count">Should not empty</p>
+                        </div>
+                        <img src="/images/icon-person.svg" alt="icon-person">
+                        <input type="number" id="peopleCount" placeholder="0">
+                    </div>
+
+                </div>
+
+                <div class="result-container">
+                    <div class="box-wrapper">
+                        <div class="tip-result">
+                            <div class="tip-Amount-result tip-con-box">
+                                <h1>Tip Amount</h1>
+                                <p>/ person</p>
+                            </div>
+                            <h1>$<span id="total-amount">0.00</span></h1>
+                        </div>
+    
+                        <div class="tip-result">
+                            <div class="tip-total-result tip-con-box">
+                                <h1>Total</h1>
+                                <p>/ person</p>
+                            </div>
+                            <h1>$<span id="total-person">0.00</span></h1>
+                        </div>    
+                    </div>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
